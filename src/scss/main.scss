@@ -1,0 +1,23 @@
+/* stylelint-disable */
+@charset 'utf-8';
+
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+@use 'vendors/swiper';
+
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/base';
+
+@use 'components/buttons';
+@use 'components/header';
+@use 'components/div-number';
+@use 'components/popup-consultation';
+@use 'components/footer';
+
+@use 'pages/home';
+
+// @use 'themes/*';
+
+/* stylelint-enable */

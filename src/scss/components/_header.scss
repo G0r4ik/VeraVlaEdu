@@ -1,0 +1,66 @@
+@use '../abstracts/' as *;
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 45px;
+}
+
+.header__inner {
+  @include flex(center, space-between);
+}
+
+.header__div-number {
+  @include flex(center, space-between);
+
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media (max-width: $middle) {
+  .header {
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .header__div-number {
+    position: absolute;
+    top: 0;
+    padding: 35px 30px 40px 20px;
+    background: linear-gradient(286deg, #0b4d69 4%, #104c54 91%);
+    box-shadow: 0 4px 34px rgba(0 0 0/ 0.35);
+    border-radius: 0 0 0 22px;
+    right: -1000px;
+    width: 90vw;
+    visibility: hidden;
+    transition: right 0.5s, visibility 1.5s;
+
+    &_visible {
+      right: 0;
+      visibility: visible;
+      transition: right 0.5s, visibility 1.5;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      background: #3b768f;
+      opacity: 0.3;
+      position: absolute;
+    }
+
+    &::before {
+      width: calc(90vw - 50px);
+      right: 30px;
+      top: 20px;
+    }
+
+    &::after {
+      width: calc(90vw - 100px);
+      right: 30px;
+      bottom: 30px;
+    }
+  }
+}

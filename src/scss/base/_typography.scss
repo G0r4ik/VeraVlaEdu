@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Avenir Next Cyr'),
+    url('./fonts/avenirnextcyr-medium.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-medium.woff') format('woff'),
+    url('./fonts/avenirnextcyr-medium.ttf') format('ttf'),
+    url('./fonts/avenirnextcyr-medium.eot') format('eot'),
+    url('./fonts/avenirnextcyr-medium.svg') format('svg');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Avenir Next Cyr'),
+    url('./fonts/avenirnextcyr-bold.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-bold.woff') format('woff'),
+    url('./fonts/avenirnextcyr-bold.ttf') format('ttf'),
+    url('./fonts/avenirnextcyr-bold.eot') format('eot'),
+    url('./fonts/avenirnextcyr-bold.svg') format('svg');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Avenir Next Cyr'),
+    url('./fonts/avenirnextcyr-demi.woff2') format('woff2'),
+    url('./fonts/avenirnextcyr-demi.woff') format('woff'),
+    url('./fonts/avenirnextcyr-demi.ttf') format('ttf'),
+    url('./fonts/avenirnextcyr-demi.eot') format('eot'),
+    url('./fonts/avenirnextcyr-demi.svg') format('svg');
+  font-display: swap;
+}

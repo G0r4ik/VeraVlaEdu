@@ -1,0 +1,21 @@
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex($ai, $jc) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin decorate-blur {
+  content: '';
+  display: block;
+  width: 45px;
+  height: 10px;
+  position: absolute;
+  background: rgba(3 225 255 / 0.65);
+  filter: blur(9px);
+}
